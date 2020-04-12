@@ -1,0 +1,165 @@
+body {
+  background-color: #f2ccc3;
+  font-family: "Josefin Sans", sans-serif;
+  color: #d89586;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navigation */
+.navigation {
+  width: 100vw;
+}
+
+.navigation ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+/* Navigation Hover */
+.hover-nav a:before,
+.hover-nav a:after {
+  opacity: 0;
+  transition: opacity 0.28s;
+}
+
+.hover-nav a:before {
+  margin-right: 15px;
+  content: "🐨";
+}
+
+.hover-nav a:after {
+  margin-left: 15px;
+  content: "🐨";
+}
+
+.hover-nav a:hover:before,
+.hover-nav a:hover:after,
+.hover-nav a:focus:before,
+.hover-nav a:focus:after {
+  opacity: 1;
+}
+
+/* Main Page Header */
+.page-stats {
+  margin-top: 100px;
+}
+
+#page-title,
+#page-time,
+#page-date {
+  margin-top: 15px;
+  font-size: 100px;
+  text-align: center;
+}
+
+#page-title {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #fff;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* Second Page */
+
+.sg-weather,
+.vc-weather {
+  margin: 100px auto 0 auto;
+}
+
+/* Third Page */
+.covid-video iframe {
+  margin: 30px 17%;
+}
+/* To do List */
+.container {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #333;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow-y: auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.todo-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: "✓";
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.delete-todo {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid #333;
+}

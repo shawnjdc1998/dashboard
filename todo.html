@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cssreset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kentuco Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <div class="navigation">
+        <ul class="hover-nav">
+          <li><a href="dashboard.html" class="link">Home</a></li>
+          <li><a href="weather.html" class="link">Weather</a></li>
+          <li><a href="covid.html" class="link">COVID-19</a></li>
+          <li><a href="todo.html" class="link">Todo List</a></li>
+          <li><a href="#" class="link">Link</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        
+        <h1 class="app-title">todos</h1>
+        <ul class="todo-list" , js-todo-list></ul>
+
+        <form action="" class="js-form">
+          <input
+            autofocus
+            type="text"
+            aria-label="Enter a new todo item"
+            placeholder="Ex. Play drums"
+            class="js-todo-input"
+          />
+        </form>
+      </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

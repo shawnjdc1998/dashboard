@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cssreset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kentuco Dashboard</title>
+  </head>
+  <body>
+    <div class="weather-wrapper">
+      <div class="navigation">
+        <ul class="hover-nav">
+          <li><a href="dashboard.html" class="link">Home</a></li>
+          <li><a href="weather.html" class="link">Weather</a></li>
+          <li><a href="covid.html" class="link">COVID-19</a></li>
+          <li><a href="todo.html" class="link">Todo List</a></li>
+          <li><a href="#" class="link">Link</a></li>
+        </ul>
+      </div>
+      <div class="weather">
+        <div class="sg-weather">
+          <a
+            a
+            class="weatherwidget-io"
+            href="https://forecast7.com/en/1d35103d82/singapore/"
+            data-label_1="Singapore"
+            data-label_2="Weather"
+            data-font="Noto Sans"
+            data-icons="Climacons Animated"
+            data-theme="pure"
+            data-basecolor="rgba(255, 255, 255, 0)"
+            >Singapore Weather</a
+          >
+        </div>
+        <div class="vc-weather">
+          <a
+            class="weatherwidget-io"
+            href="https://forecast7.com/en/49d28n123d12/vancouver/"
+            data-label_1="Vancouver"
+            data-label_2="Weather"
+            data-font="Noto Sans"
+            data-icons="Climacons Animated"
+            data-theme="pure"
+            data-basecolor="rgba(255, 255, 255, 0)"
+            >Vancouver Weather</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
+  </body>
+</html>
